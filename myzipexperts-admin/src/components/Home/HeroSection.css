@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+.hero {
+  background: #ffe0e0;
+  padding: 40px 16px;
+  overflow-x: hidden;
+  border-radius: 0px 0px 30px 30px;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* LEFT */
+.hero-left h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  text-align: center;
+  font-weight: 700;
+  color: #222;
+}
+
+.hero-left h1 span {
+  color: #222;
+}
+
+.hero-left p {
+  font-family: 'Montserrat';
+  margin-top: 12px;
+  color: #555;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  text-align: center;
+}
+
+/* SEARCH */
+.search-box {
+  margin-top: 24px;
+  background: #fff;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  position: relative;
+}
+
+.location-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 14px;
+  cursor: pointer;
+  border-right: 1px solid #eee;
+  font-size: 14px;
+}
+
+.location-dropdown {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  list-style: none;
+  width: 160px;
+  padding: 5px 10px;
+  z-index: 10;
+}
+
+.location-dropdown li {
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.location-dropdown li:hover {
+  background: #f5f5f5;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 12px;
+  font-size: 13px;
+   font-family: 'Montserrat';
+}
+
+.search-btn {
+  background: #e63946;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* IMAGE */
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+
+.image-circle {
+  width: 280px;
+  height: 305px;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.image-circle img {
+  width: 100%;
+  object-fit: cover;
+}
+.zipcode-icon{
+    display: flex;
+    gap: 8px;
+}
+.Search-icon{
+   padding-top: 4px;
+
+}
+.arrow{
+    padding-bottom: 10px;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .hero-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero-left {
+    flex: 1;
+  }
+
+  .hero-right {
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .hero-left h1 {
+    font-size: 42px;
+    text-align: left;
+  }
+
+  .hero-left p {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .image-circle {
+    width: 380px;
+    height: 380px;
+  }
+}

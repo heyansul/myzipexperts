@@ -1,0 +1,467 @@
+/* Services Page */
+.services-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.services-page h1 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.services-page h1 span {
+  color: #e63946;
+}
+
+.services-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.applied-filters {
+  display: flex;
+  gap: 8px;
+}
+
+.applied-filters span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffe5e5;
+  color: #e63946;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* Service Card */
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.service-page-card {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  gap: 12px;
+  background: #fff;
+  border-radius: 14px;
+  /* padding: 12px; */
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+.service-page-card img {
+  width: 110px;
+  height: 110px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.service-content {
+  padding: 13px 10px 10px 10px;
+  position: relative;
+  flex: 1;
+}
+
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.service-header h3 {
+  font-size: 13px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  line-height: 21px;
+  margin: 0;
+}
+
+.service-actions {
+  display: flex;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.service-location {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  color: #000;
+  margin: 0px;
+  font-size: 12px;
+  /* margin: 6px 0; */
+}
+
+.service-desc {
+   font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 11px;
+  color: #555;
+  line-height: 1.4;
+  color: #444;
+  margin: 8px 0 20px;
+}
+
+.rating {
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+  margin: 6px 0;
+}
+
+.service-footer {
+  display: flex;
+  gap: 10px;
+}
+
+.service-outline-btn{
+   font-family: 'Poppins';
+  font-weight: 500;
+  flex: 1;
+  padding: 6px 5px 6px 5px;
+  border: 1px solid #000;
+  background: #fff;
+  border-radius: 8px;
+  font-size: 11px;
+}
+
+.service-primary-btn {
+  flex: 1;
+   font-family: 'Poppins';
+  font-weight: 500;
+  padding: 6px 5px 6px 5px;
+  background: #e63946;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 11px;
+  cursor: pointer;
+  border: none;
+}
+
+
+/* Load More */
+.load-more {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.load-more button {
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  background: #e63946;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Sticky Filter (Mobile) */
+.sticky-filter {
+  position: fixed;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+
+  /* 🔥 Glass gradient */
+  background: linear-gradient(
+    90deg,
+    rgba(183, 90, 95, 0.982),
+    rgba(233, 154, 161, 0.968)
+  );
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border-radius: 14px 14px 0 0;
+  z-index: 1000;
+}
+
+
+
+
+.sticky-filter button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  padding: 17px 85px;
+  /* border-right: 1px solid white; */
+}
+
+/* Filter Modal */
+.filter-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 2000;
+}
+
+.filter-box {
+  background: #fff;
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+}
+
+.filter-box h3 {
+  margin-bottom: 16px;
+}
+
+
+.apply-btn {
+  width: 75%;
+  padding: 14px;
+  background: #e63946;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-page-card {
+    flex-direction: row;
+    border: 1px solid rgb(218, 218, 218);
+  }
+
+  .service-page-card img {
+     width: 110px;
+        object-fit: cover;
+        border-radius: 16px;
+        flex-shrink: 0;
+    height: 190px;
+  }
+
+  .sticky-filter {
+    display: flex;
+  }
+  #ph-service-img{
+  height: 14px;
+  width: 14px;
+}
+.applied-filters-wrapper{
+  display:none;
+}
+.desktop-sort-filter{
+  display:none;
+}
+#share-service-img{
+  height: 16px;
+  width: 15px;
+  border-radius: 0px;
+}
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.filter-header button {
+  background: none;
+  border: none;
+  font-size: 20px;
+}
+
+.filter-footer {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.clear-btn {
+  flex: 1;
+  padding: 12px;
+  background: #f3f3f3;
+  border: none;
+  border-radius: 8px;
+}
+.service-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.service-option {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1.5px solid #ddd;
+  background: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.service-option.active {
+  background: #ffe5e5;
+  border-color: #e63946;
+  color: #e63946;
+  font-weight: 600;
+}
+.filter-label {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.rating-select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px; /* 🔑 bigger text */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin-bottom: 16px;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  /* margin-bottom: 20px; */
+}
+ #ph-service-img{
+  height: 14px;
+  width: 14px;
+}
+#share-service-img{
+  height: 16px;
+  width: 15px;
+  border-radius: 0px;
+}
+/* ==================================
+   DESKTOP SERVICE CARD – FINAL FIX
+   ================================== */
+@media (min-width: 1024px) {
+
+  .service-page-card {
+    display: flex;
+    align-items: stretch;
+    /* padding: 24px; */
+    gap: 32px;
+    border-radius: 18px;
+    border: 1px solid rgb(228, 228, 228);
+  }
+
+  /* Image – large like reference */
+  .service-page-card img {
+    width: 360px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 16px;
+    flex-shrink: 0;
+  }
+
+  /* Content takes full remaining width */
+  .service-content {
+    flex: 1;
+    padding: 0;
+    display: inline-grid;
+    align-items: center;
+    align-content: center;
+  }
+
+  /* Title */
+  .service-header h3 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  /* Rating – top right */
+  .rating {
+    position: absolute;
+    top: 27px;
+    right: 18px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  /* Location */
+  .service-location {
+    font-size: 14px;
+    margin: 6px 0 10px;
+  }
+
+  /* Description – FULL WIDTH FIX */
+  .service-desc {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 12px 0 22px;
+  }
+
+  /* Footer buttons */
+  .service-footer {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .service-outline-btn {
+    padding: 12px 22px;
+    font-size: 14px;
+  }
+
+  .service-primary-btn {
+    padding: 12px 22px;
+    font-size: 14px;
+  }
+
+  /* Share & wishlist alignment */
+  .service-actions {
+    display: flex;
+    position: absolute;
+    bottom: 48px;
+    right: 18px;
+    gap: 10px;
+    align-items: center;
+  }
+}
+/* =========================
+   SERVICES IMAGE SECTION
+   ========================= */
+.services-image-section {
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  margin-bottom: -25px;
+}
+
+.services-image-section img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  /* border-radius: 18px; */
+}
+
+/* Mobile safe (optional tweak) */
+@media (max-width: 768px) {
+  .services-image-section img {
+    height: 500px;
+  }
+}

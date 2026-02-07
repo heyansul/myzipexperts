@@ -1,0 +1,76 @@
+.header {
+  width: 100%;
+  background-color: #ffe1e1;
+  padding: 12px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.menu-btn {
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-icon {
+  font-size: 24px;
+  color: #e63946;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logo-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #111;
+}
+
+.logo-subtitle {
+  font-size: 12px;
+  color: #666;
+}
+
+.login-btn {
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #d62839;
+}
+.logo-img{
+    height: 30px;
+    width: 100%;
+}
+.profile-avatar {
+  display: flex;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}

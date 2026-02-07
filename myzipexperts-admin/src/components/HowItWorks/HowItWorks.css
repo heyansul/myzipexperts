@@ -1,0 +1,130 @@
+.how-it-works {
+  padding: 30px 20px;
+  background: #fff;
+}
+
+.how-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.how-mobile {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+
+.how-image {
+  padding-top: 15px;
+  width: 100%;
+  max-width: 280px;
+}
+
+.how-steps {
+  position: relative;
+}
+
+.how-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  opacity: 0.4;
+  transition: all 0.4s ease;
+  margin-bottom: 25px;
+}
+
+.how-step.active {
+  opacity: 1;
+}
+
+.dot {
+  width: 28px;
+  height: 14px;
+  background: #f1a6a6;
+  border-radius: 50%;
+  margin-top: 6px;
+  position: relative;
+}
+
+.how-step.active .dot {
+  background: #e53935;
+  z-index: 10;
+}
+
+.how-steps::before {
+  content: "";
+  height: 70%;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  bottom: 5px;
+  width: 2px;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #f2a1a1,
+    #f2a1a1 6px,
+    transparent 6px,
+    transparent 12px
+  );
+}
+
+
+.how-step:last-child::before {
+  display: none;
+}
+
+.how-step p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 2px 0px;
+  font-family: 'Montserrat';
+}
+
+.how-desktop {
+  display: none;
+  justify-content: space-between;
+  gap: 40px;
+  position: relative;
+}
+
+.how-card {
+  flex: 1;
+  text-align: center;
+}
+
+.how-card img {
+  width: 220px;
+  margin-bottom: 20px;
+}
+
+.step-number {
+  width: 42px;
+  height: 42px;
+  background: #111;
+  color: #fff;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .how-mobile {
+    display: none;
+  }
+
+  .how-desktop {
+    display: flex;
+  }
+
+  .how-desktop::before {
+    content: "";
+    position: absolute;
+    top: 260px;
+    left: 10%;
+    right: 10%;
+    height: 3px;
+    background: #111;
+  }
+}
